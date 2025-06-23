@@ -22,10 +22,9 @@ public class DriverInstance {
         }
     }
 
-    public void closeWebDriver() {
+    public static void closeWebDriver() {
         if (driver != null) {
             driver.close();
-            driver = null;
         }
     }
 }

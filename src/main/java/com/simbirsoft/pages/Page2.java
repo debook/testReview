@@ -3,6 +3,7 @@ package com.simbirsoft.pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -23,7 +24,8 @@ public class Page2 {
     }
 
     @Step("Ввод значения {number} в поле input1")
-    public Page2 inputNumberToField(Integer number) {
+    public Page2 inputNumberToField(Integer number) throws InterruptedException {
+        Thread.sleep(2000);
         driverWait.until(presenceOfElementLocated(input1))
                 .sendKeys(number.toString());
         return this;
@@ -33,6 +35,10 @@ public class Page2 {
     public Page2 clickButton1() {
         driver.findElement(button1).click();
         return this;
+    }
+
+    public WebElement getResultField() {
+      return driver.findElement(resultField);
     }
 
     public boolean checkResult(String expectedResult) {
