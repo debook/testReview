@@ -16,7 +16,7 @@ public class Page1 {
     private WebDriver driver;
     private WebDriverWait driverWait;
 
-    @FindBy(xpath = "//select[@id='userSelect']")
+    @FindBy(xpath = "/div/button/div/span/[@id='userSelect']/div")
     public WebElement button1;
 
     @FindBy(css = ".xxClass")
@@ -30,6 +30,7 @@ public class Page1 {
         this.driver = driver;
         driverWait = new WebDriverWait(driver, Duration.ofMillis(10_000));
     }
+
 
     @Step("Выбор пользователя {username}")
     public Page1 selectCustomerUser(String username) {
