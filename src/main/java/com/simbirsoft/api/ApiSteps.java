@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class ApiSteps {
 
-    @Step("Авторизоватся")
+    @Step("Авторизоваться")
     public Response authRequest() {
         String data = "{\"login\": \"admin\", \"password\": \"1234\"}";
 

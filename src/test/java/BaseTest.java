@@ -5,8 +5,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class BaseTest {
-
     private static final boolean LOCAL = true;
+
 
     @BeforeAll
     public static void init() {

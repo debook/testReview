@@ -3,7 +3,6 @@ package com.simbirsoft.pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -16,7 +15,7 @@ public class Page2 {
 
     private By input1 = By.cssSelector("input");
     private By button1 = By.cssSelector(".xxClass");
-    private By button2 = By.cssSelector(".settings");
+    private By button2 = By.cssSelector(".settings_sh5345j");
     private By resultField = By.cssSelector(".resultField");
 
     public Page2(WebDriver driver) {

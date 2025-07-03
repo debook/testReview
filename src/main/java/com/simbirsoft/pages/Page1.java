@@ -31,7 +31,6 @@ public class Page1 {
         driverWait = new WebDriverWait(driver, Duration.ofMillis(10_000));
     }
 
-
     @Step("Выбор пользователя {username}")
     public Page1 selectCustomerUser(String username) {
         button1.click();
